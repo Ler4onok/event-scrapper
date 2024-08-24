@@ -1,0 +1,55 @@
+2024-08-24 18:22:28,736 - __main__ - INFO - Starting Eventbrite scraping
+2024-08-24 18:22:31,132 - __main__ - INFO - Scraped Eventbrite events
+2024-08-24 18:22:31,133 - __main__ - INFO - Scraped Eventbrite event links
+2024-08-24 18:22:32,923 - __main__ - INFO - Scraped Eventbrite event: NÃO CONSIGO SER CORRUPTO - FÓRUM MACHICO
+2024-08-24 18:22:34,567 - __main__ - INFO - Scraped Eventbrite event: Mosaic photo frames workshop
+2024-08-24 18:22:36,202 - __main__ - INFO - Scraped Eventbrite event: mosaic jewellery box Workshop for beginners
+2024-08-24 18:22:37,710 - __main__ - INFO - Scraped Eventbrite event: portuguese style decorative board workshop
+2024-08-24 18:22:39,238 - __main__ - INFO - Scraped Eventbrite event: Floral design for beginners
+2024-08-24 18:22:40,948 - __main__ - INFO - Scraped Eventbrite event: WANNA BET? PORTUGUESE WINE GAME
+2024-08-24 18:22:42,380 - __main__ - INFO - Scraped Eventbrite event: LIQUID HORIZON.
+2024-08-24 18:22:44,490 - __main__ - INFO - Scraped Eventbrite event: ´MADEIRADiG 2024
+2024-08-24 18:22:46,195 - __main__ - INFO - Scraped Eventbrite event: 7ARTES
+2024-08-24 18:22:47,560 - __main__ - INFO - Scraped Eventbrite event: Concertos L - ZDB convida Niecy Blues
+2024-08-24 18:22:48,982 - __main__ - INFO - Scraped Eventbrite event: bye bye summer party at NÔMADE
+2024-08-24 18:22:50,823 - __main__ - INFO - Scraped Eventbrite event: Community Meditation & Inspiration Sessions
+2024-08-24 18:22:53,209 - __main__ - INFO - Scraped Eventbrite event: Free trial day
+2024-08-24 18:22:54,955 - __main__ - INFO - Scraped Eventbrite event: Beach REIA (Monthly Real Estate Meeting) Only Networking and Investing.
+2024-08-24 18:22:54,963 - __main__ - INFO - Created Eventbrite DataFrame
+2024-08-24 18:23:56,527 - __main__ - INFO - Starting Eventbrite scraping
+2024-08-24 18:23:57,688 - __main__ - INFO - Scraped Eventbrite events
+2024-08-24 18:23:57,688 - __main__ - INFO - Scraped Eventbrite event links
+2024-08-24 18:23:59,290 - __main__ - INFO - Scraped Eventbrite event: NÃO CONSIGO SER CORRUPTO - FÓRUM MACHICO
+2024-08-24 18:24:00,636 - __main__ - INFO - Scraped Eventbrite event: Mosaic photo frames workshop
+2024-08-24 18:24:02,048 - __main__ - INFO - Scraped Eventbrite event: mosaic jewellery box Workshop for beginners
+2024-08-24 18:24:03,481 - __main__ - INFO - Scraped Eventbrite event: portuguese style decorative board workshop
+2024-08-24 18:24:05,022 - __main__ - INFO - Scraped Eventbrite event: Floral design for beginners
+2024-08-24 18:24:05,671 - __main__ - INFO - Scraped Eventbrite event: WANNA BET? PORTUGUESE WINE GAME
+2024-08-24 18:24:07,368 - __main__ - INFO - Scraped Eventbrite event: LIQUID HORIZON.
+2024-08-24 18:24:08,917 - __main__ - INFO - Scraped Eventbrite event: ´MADEIRADiG 2024
+2024-08-24 18:24:10,250 - __main__ - INFO - Scraped Eventbrite event: 7ARTES
+2024-08-24 18:24:11,513 - __main__ - INFO - Scraped Eventbrite event: Concertos L - ZDB convida Niecy Blues
+2024-08-24 18:24:12,565 - __main__ - INFO - Scraped Eventbrite event: bye bye summer party at NÔMADE
+2024-08-24 18:24:14,173 - __main__ - INFO - Scraped Eventbrite event: Community Meditation & Inspiration Sessions
+2024-08-24 18:24:16,327 - __main__ - INFO - Scraped Eventbrite event: Free trial day
+2024-08-24 18:24:17,747 - __main__ - INFO - Scraped Eventbrite event: Beach REIA (Monthly Real Estate Meeting) Only Networking and Investing.
+2024-08-24 18:24:17,756 - __main__ - INFO - Created Eventbrite DataFrame
+2024-08-24 18:24:23,183 - __main__ - INFO - Fetched categories from database
+2024-08-24 18:24:23,193 - __main__ - INFO - Created Event to Category DataFrame
+2024-08-24 18:24:25,188 - __main__ - INFO - Fetched event_to_category table from database
+2024-08-24 18:24:25,189 - __main__ - INFO - Fetched event table from database
+2024-08-24 18:24:25,229 - __main__ - INFO - Deleted all rows from event_to_category table
+2024-08-24 18:24:25,271 - __main__ - INFO - Deleted all rows from event table
+2024-08-24 18:24:25,309 - __main__ - INFO - Committed transaction
+2024-08-24 18:24:25,525 - __main__ - INFO - Inserted events into database
+2024-08-24 18:24:25,675 - __main__ - INFO - Inserted event to category into database
+2024-08-24 18:24:25,676 - __main__ - INFO - Closed database connection
+2024-08-24 18:24:25,676 - __main__ - INFO - Finished Eventbrite scraping
+2024-08-24 18:25:22,754 - __main__ - INFO - Starting Eventbrite scraping
+2024-08-24 18:25:23,914 - __main__ - INFO - Scraped Eventbrite events
+2024-08-24 18:25:23,914 - __main__ - INFO - Scraped Eventbrite event links
+2024-08-24 18:25:25,483 - __main__ - INFO - Scraped Eventbrite event: NÃO CONSIGO SER CORRUPTO - FÓRUM MACHICO
+2024-08-24 18:25:31,737 - INFO - Starting Eventbrite scraping
+2024-08-24 18:25:32,917 - INFO - Scraped Eventbrite events
+2024-08-24 18:25:32,918 - INFO - Scraped Eventbrite event links
+2024-08-24 18:25:33,576 - INFO - Scraped Eventbrite event: NÃO CONSIGO SER CORRUPTO - FÓRUM MACHICO

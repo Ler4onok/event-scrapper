@@ -34,6 +34,7 @@ DF_COLUMNS = ["title", "slug", "start_date", "end_date", "categories", "location
 EMPTY_FIELDS = ['organizer', 'price', 'short_description']
 
 EVENTS_MADEIRA_URL = 'https://eventsmadeira.com/en/event-listing/'
+EVENTS_MADEIRA_URL_PT = 'https://eventsmadeira.com/lista-de-eventos/'
 EVENTBRITE_URL = 'https://www.eventbrite.com/d/portugal--ilha-da-madeira--85687345/all-events/'
 
 EVENTS_MADEIRA_ID = 1
@@ -286,15 +287,25 @@ def parse_event_date(event_date):
 logger.info('Starting scraping')
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-response_madeira_events = requests.get(EVENTS_MADEIRA_URL, headers=headers)
+try:
+    logger.info('Starting to fetch Madeira events EN')
+    response_madeira_events = requests.get(EVENTS_MADEIRA_URL, headers=headers)
+    soup_madeira_events = BeautifulSoup(response_madeira_events.text, 'html.parser')
+    divs = soup_madeira_events.find('div', class_='gt-event-listing').find_all('div', class_='gt-event-style-3') if soup.find('div', class_='gt-event-listing') else KeyError
+except: 
+    logger.info('EN failed. Starting to fetch Madeira events PT')
+    response_madeira_events = requests.get(EVENTS_MADEIRA_URL_PT, headers=headers)
+    soup_madeira_events = BeautifulSoup(response_madeira_events.text, 'html.parser')
+    divs = soup_madeira_events.find('div', class_='gt-event-listing').find_all('div', class_='gt-event-style-3')
+
 logger.info('Fetched Madeira events')
 
 response_eventbrite = requests.get(EVENTBRITE_URL, headers=headers)
 logger.info('Fetched Eventbrite events')
 
-soup_madeira_events = BeautifulSoup(response_madeira_events.text, 'html.parser')
-divs = soup_madeira_events.find('div', class_='gt-event-listing').find_all('div', class_='gt-event-style-3')
-logger.info('Parsed Madeira Events events')
+# soup_madeira_events = BeautifulSoup(response_madeira_events.text, 'html.parser')
+# divs = soup_madeira_events.find('div', class_='gt-event-listing').find_all('div', class_='gt-event-style-3')
+# logger.info('Parsed Madeira Events events')
 
 soup_eventbrite = BeautifulSoup(response_eventbrite.text, 'html.parser')
 events = soup_eventbrite.find_all('div', class_='discover-search-desktop-card discover-search-desktop-card--hiddeable')

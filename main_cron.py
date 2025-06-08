@@ -291,7 +291,7 @@ try:
     logger.info('Starting to fetch Madeira events EN')
     response_madeira_events = requests.get(EVENTS_MADEIRA_URL, headers=headers)
     soup_madeira_events = BeautifulSoup(response_madeira_events.text, 'html.parser')
-    divs = soup_madeira_events.find('div', class_='gt-event-listing').find_all('div', class_='gt-event-style-3') if soup.find('div', class_='gt-event-listing') else KeyError
+    divs = soup_madeira_events.find('div', class_='gt-event-listing').find_all('div', class_='gt-event-style-3') if soup_madeira_events.find('div', class_='gt-event-listing') else KeyError
 except: 
     logger.info('EN failed. Starting to fetch Madeira events PT')
     response_madeira_events = requests.get(EVENTS_MADEIRA_URL_PT, headers=headers)
@@ -436,7 +436,7 @@ try:
     event_to_category_df = pd.DataFrame(columns=['event_id', 'category_id'])
     data = []
     for index, row in df.iterrows():
-        categories = row['categories'].split(', ')
+        categories = row['categories'].split(', ') if row['categories'] else []
         id = row['id']
         for category in categories:
             category_id = categories_df[categories_df['title'] == category]['id'].values
